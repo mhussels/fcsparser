@@ -543,6 +543,8 @@ class FCSParser(object):
                      u'For linear scaling both shall be zero e.g. "0.0,0.0"\n'
                      u'Continuing with linear scaling.')
                 logger.warning(msg.format(channel_number))
+                decades=0
+                minimum=0
             elif decades > 0 and minimum == 0:
                 msg=(u'Positive number is given for decades but'
                      u'zero is given for minimum for channel {}.'
